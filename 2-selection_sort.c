@@ -10,25 +10,24 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	unsigned long int mini, x = 0, y;
+	size_t min_i, x = 0, y;
 
 	if (size == 0)
 		return;
 
 	while (x < size - 1)
 	{
-		mini = x;
+		min_i = x;
 		for (y = x + 1; y < size; y++)
 		{
-			if (array[y] < array[mini])
-				mini = y;
-			if (mini != x)
-			{
-				swapping(&array[mini], &array[x]);
-			}
-
+			if (array[y] < array[min_i])
+				min_i = y;
 		}
-		print_array(array, size);
+			if (min_i != x)
+			{
+				swapping(&array[min_i], &array[x]);
+				print_array(array, size);
+			}
 		x++;
 	}
 }
