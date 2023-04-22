@@ -21,14 +21,20 @@ typedef struct listint_s
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
+void swapping(int *prev, int *next);
+
 /*bubble sort algorithms*/
 void bubble_sort(int *array, size_t size);
-void swapping(int *prev, int *next);
 
 /*Insertion sort algorithm*/
 void insertion_sort_list(listint_t **list);
 
 /*Selection sort algorithm*/
 void selection_sort(int *array, size_t size);
+
+/*Quick sort algorithm*/
+void quick_sort(int *array, size_t size);
+void quick_rec(int *arr, int small, int big, int size);
+int pivot(int *arr, int small, int big, int size);
 
 #endif
