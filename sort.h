@@ -2,7 +2,6 @@
 #define _sort_h_
 
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -28,5 +27,8 @@ void swapping(int *prev, int *next);
 
 /*Insertion sort algorithm*/
 void insertion_sort_list(listint_t **list);
+
+/*Selection sort algorithm*/
+void selection_sort(int *array, size_t size);
 
 #endif
