@@ -12,7 +12,7 @@ void insertion_sort_list(listint_t **list)
 	/*int x;*/
 	listint_t *new = *list, *tempo;
 
-	if (list == NULL)
+	if (*list == NULL)
 		return;
 
 	while (new != NULL)
