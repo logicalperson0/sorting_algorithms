@@ -20,4 +20,6 @@ Insertion sort algorithm
 3-quick_sort.c: Function that sorts an array of integers in ascending order using the Quick sort algorithm
 3-O: File that stores the best, average and worst case of the time complexity of the Quick sort algorithm
 
+100-shell_sort.c: Function that sorts an array of integers in ascending order using the Shell sort algorithm
+
 

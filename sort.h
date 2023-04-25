@@ -37,4 +37,7 @@ void quick_sort(int *array, size_t size);
 void quick_rec(int *arr, int small, int big, int size);
 int pivot(int *arr, int small, int big, int size);
 
+/*shell sort algorithm*/
+void shell_sort(int *array, size_t size);
+
 #endif
