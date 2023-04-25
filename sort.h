@@ -2,6 +2,7 @@
 #define _sort_h_
 
 #include <stdlib.h>
+#include <stdbool.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -39,5 +40,10 @@ int pivot(int *arr, int small, int big, int size);
 
 /*shell sort algorithm*/
 void shell_sort(int *array, size_t size);
+
+/*cocktail_sort*/
+void cocktail_sort_list(listint_t **list);
+bool forward_s(listint_t **lists, bool z);
+bool backward_s(listint_t **lists, bool z);
 
 #endif

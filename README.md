@@ -22,4 +22,8 @@ Insertion sort algorithm
 
 100-shell_sort.c: Function that sorts an array of integers in ascending order using the Shell sort algorithm
 
+101-cocktail_sort_list.c: Function that sorts an array of integers in ascending order using the
+Cocktail shaker sort algorithm
+101-O: File that stores the best, average and worst case of the time complexity of the Cocktail sort algorithm
+
 
