@@ -13,6 +13,8 @@ void cocktail_sort_list(listint_t **list)
 
 	if (list == NULL)
 		return;
+	if (*list == NULL)
+		return;
 
 	while (b)
 	{
