@@ -26,4 +26,7 @@ Insertion sort algorithm
 Cocktail shaker sort algorithm
 101-O: File that stores the best, average and worst case of the time complexity of the Cocktail sort algorithm
 
+102-counting_sort.c: Function that sorts an array of integers in ascending order using the Counting sort algorithm
+102-O: File that stores the best, average and worst case of the time complexity of the Counting sort algorithm
+
 
