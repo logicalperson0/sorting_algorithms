@@ -13,8 +13,6 @@ void cocktail_sort_list(listint_t **list)
 
 	if (list == NULL)
 		return;
-	if (*list == NULL)
-		return;
 
 	while (b)
 	{
@@ -40,9 +38,9 @@ bool forward_s(listint_t **lists, bool z)
 {
 	listint_t *tempo, *news = *lists;
 
-	while (news != NULL)
+	while (news != NULL && news->next != NULL)
 	{
-		if (news->next != NULL && (news->n > news->next->n))
+		if (news->n > news->next->n)
 		{
 			tempo = news->next;
 			news->next = tempo->next;
@@ -82,10 +80,10 @@ bool backward_s(listint_t **lists, bool z)
 	while (x->next != NULL)
 		x = x->next;
 
-	while (x != NULL)
+	while (x != NULL && x->prev != NULL)
 	{
 
-		if (x->prev != NULL && (x->n < x->prev->n))
+		if (x->n < x->prev->n)
 		{
 			tempo = x->prev;
 			x->prev = tempo->prev;
