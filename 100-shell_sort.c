@@ -13,7 +13,9 @@ void shell_sort(int *array, size_t size)
 	size_t x, y, z;
 	int c;
 
-	for (x = size * 3 + 1; x > 0; x = (x - 1) / 3)
+	for (x = 1; x < size; x = x * 3 + 1)
+		;
+	while ((x = (x - 1) / 3) > 0)
 	{
 		for (y = x; y < size; y++)
 		{
@@ -21,7 +23,7 @@ void shell_sort(int *array, size_t size)
 			for (z = y; z >= x && array[z - x] > c; z -= x)
 				array[z] = array[z - x];
 			array[z] = c;
-			print_array(array, size);
 		}
+		print_array(array, size);
 	}
 }
