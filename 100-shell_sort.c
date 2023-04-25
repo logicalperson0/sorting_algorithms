@@ -13,7 +13,7 @@ void shell_sort(int *array, size_t size)
 	size_t x, y, z;
 	int c;
 
-	for (x = size * 3 + 1; x > 0; x /= 3 - 1)
+	for (x = size * 3 + 1; x > 0; x = (x - 1) / 3)
 	{
 		for (y = x; y < size; y++)
 		{
